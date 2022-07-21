@@ -1,7 +1,10 @@
 import React from "react";
+import StakeBox from "../components/StakeBox";
 
 const Contact = () => {
-  return <div>This is the contact page</div>;
+  return (
+    <StakeBox/>
+  );
 };
 
 export default Contact;

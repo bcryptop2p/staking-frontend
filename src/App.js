@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "./style/App.css";
 import Dashboard from './pages/Dashboard';
 import Stake from './pages/Stake';
 import Rewards from './pages/Rewards';
