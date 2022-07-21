@@ -1,5 +1,5 @@
 # Sturgeon Ethereum Liquid Staking Protocol
 
-##Beta
+## Beta version
 
-##DEMO: https://main--cute-custard-50cda4.netlify.app/
+## DEMO: https://main--cute-custard-50cda4.netlify.app/
