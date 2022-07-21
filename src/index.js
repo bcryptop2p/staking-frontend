@@ -1,13 +1,16 @@
-import * as React from 'react';
-import ReactDOM from 'react-dom/client';
-import { StyledEngineProvider } from '@mui/material/styles';
-import './index.css';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter as Router } from "react-router-dom";
+import App from "./App";
+import CssBaseline from "@material-ui/core/CssBaseline";
 
-ReactDOM.createRoot(document.querySelector("#root")).render(
+const rootElement = document.getElementById("root");
+ReactDOM.render(
   <React.StrictMode>
-    <StyledEngineProvider injectFirst>
+    <Router>
+      <CssBaseline />
       <App />
-    </StyledEngineProvider>
-  </React.StrictMode>
+    </Router>
+  </React.StrictMode>,
+  rootElement
 );
