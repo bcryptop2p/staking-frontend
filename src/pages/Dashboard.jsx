@@ -7,6 +7,7 @@ import '../style/App.css';
 import Deposit from '../components/Deposit';
 import Reward from '../components/Reward';
 import Apr from '../components/Apr';
+import Tx from '../components/Tx';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -16,6 +17,12 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2),
     textAlign: 'left',
     color: theme.palette.text.secondary,
+  },
+  paper1: {
+    padding: theme.spacing(2),
+    textAlign: 'left',
+    color: theme.palette.text.secondary,
+    marginTop: '30px',
   },
   
 }));
@@ -37,7 +44,11 @@ export default function FullWidthGrid() {
           <Paper className={classes.paper}><Apr/></Paper>
         </Grid>
       </Grid>
+      <Paper className={classes.paper1}>
+      <Tx/>
+      </Paper>
       </Container>
+      
     </div>
   );
 }
