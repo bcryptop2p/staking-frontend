@@ -13,7 +13,7 @@
   flex-direction: column;
   gap: 15px;
   text-align: left;
-  margin-left: -10%;
+  margin-left: -12%;
 }
 
 .list2 {
@@ -29,6 +29,15 @@
   font-weight: 700;
 }
 
+.staker {
+  padding-bottom: 25px;
+  padding-top: 40px;
+}
+
+.staker-container {
+  margin-top: 8%;
+}
+
 .form {
   width: 90%;
   margin: auto;
@@ -36,7 +45,21 @@
 
 .stakeintro {
   text-align: center;
-  margin-top: 110px;
+}
+.info {
+  text-align: left;
+}
+
+.stake-info {
+  text-align: left;
+}
+
+.info-main {
+  text-align: left;
+}
+
+.contain {
+  margin-top: 100px;
 }
 
 

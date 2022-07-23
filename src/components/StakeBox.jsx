@@ -1,7 +1,5 @@
 import React from "react";
 import CssBaseline from '@material-ui/core/CssBaseline';
-import Box from '@material-ui/core/Box';
-import Container from '@material-ui/core/Container';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
@@ -18,6 +16,9 @@ const useStyles = makeStyles((theme) => ({
     submit: {
       margin: theme.spacing(3, 0, 2),
     },
+    heading: {
+      fontWeight: theme.typography.fontWeightBold,
+    },
   }));
 
 
@@ -28,15 +29,12 @@ export default function StakeBox() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Container className="staker" maxWidth="sm">
         <div className="stakeintro">
-        <Typography component="h1" variant="h5">
+        <Typography component="h1" variant="h5" className={classes.heading}>
           Stake Ether
         </Typography>
         <p>Stake ETH and receive stETH while staking.</p>
         </div>
-        <Box sx={{ bgcolor: '#fff', height: '50vh', boxShadow: 'rgba(17, 12, 46, 0.15) 0px 48px 100px 0px', borderRadius: '25px', marginTop: '-5px', paddingTop: '17px'}}>
-
         <form className="form" noValidate>
           <TextField
             variant="outlined"
@@ -78,8 +76,5 @@ export default function StakeBox() {
             </Grid>
           </Grid>
         </form>
-
-        </Box>
-      </Container>
     </React.Fragment>
     )};
